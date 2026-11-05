@@ -1,0 +1,449 @@
+{
+  "v3 confirmation: base vs coding-4b": {
+    "strict": {
+      "tool_base": 123,
+      "tool_adapter": 173,
+      "tool_of": 192,
+      "gains": 50,
+      "regressions": 0,
+      "net": 50,
+      "case_level_p": 1.7763568394002505e-15,
+      "families": {
+        "edit": {
+          "base": 24,
+          "adapter": 24
+        },
+        "glob": {
+          "base": 3,
+          "adapter": 5
+        },
+        "grep": {
+          "base": 0,
+          "adapter": 24
+        },
+        "injection": {
+          "base": 24,
+          "adapter": 24
+        },
+        "read": {
+          "base": 24,
+          "adapter": 24
+        },
+        "slice": {
+          "base": 24,
+          "adapter": 24
+        },
+        "test": {
+          "base": 0,
+          "adapter": 24
+        },
+        "write": {
+          "base": 24,
+          "adapter": 24
+        }
+      },
+      "families_improved": 3,
+      "families_worse": 0,
+      "family_level_p": 0.25,
+      "math_base": 63,
+      "math_adapter": 63,
+      "math_of": 64
+    },
+    "format": {
+      "tool_base": 123,
+      "tool_adapter": 173,
+      "tool_of": 192,
+      "gains": 50,
+      "regressions": 0,
+      "net": 50,
+      "case_level_p": 1.7763568394002505e-15,
+      "families": {
+        "edit": {
+          "base": 24,
+          "adapter": 24
+        },
+        "glob": {
+          "base": 3,
+          "adapter": 5
+        },
+        "grep": {
+          "base": 0,
+          "adapter": 24
+        },
+        "injection": {
+          "base": 24,
+          "adapter": 24
+        },
+        "read": {
+          "base": 24,
+          "adapter": 24
+        },
+        "slice": {
+          "base": 24,
+          "adapter": 24
+        },
+        "test": {
+          "base": 0,
+          "adapter": 24
+        },
+        "write": {
+          "base": 24,
+          "adapter": 24
+        }
+      },
+      "families_improved": 3,
+      "families_worse": 0,
+      "family_level_p": 0.25,
+      "math_base": 63,
+      "math_adapter": 63,
+      "math_of": 64
+    },
+    "fair": {
+      "tool_base": 147,
+      "tool_adapter": 173,
+      "tool_of": 192,
+      "gains": 26,
+      "regressions": 0,
+      "net": 26,
+      "case_level_p": 2.9802322387695312e-08,
+      "families": {
+        "edit": {
+          "base": 24,
+          "adapter": 24
+        },
+        "glob": {
+          "base": 3,
+          "adapter": 5
+        },
+        "grep": {
+          "base": 0,
+          "adapter": 24
+        },
+        "injection": {
+          "base": 24,
+          "adapter": 24
+        },
+        "read": {
+          "base": 24,
+          "adapter": 24
+        },
+        "slice": {
+          "base": 24,
+          "adapter": 24
+        },
+        "test": {
+          "base": 24,
+          "adapter": 24
+        },
+        "write": {
+          "base": 24,
+          "adapter": 24
+        }
+      },
+      "families_improved": 2,
+      "families_worse": 0,
+      "family_level_p": 0.5,
+      "math_base": 63,
+      "math_adapter": 63,
+      "math_of": 64
+    }
+  },
+  "v4 held-out: base vs coding-4b": {
+    "strict": {
+      "tool_base": 149,
+      "tool_adapter": 176,
+      "tool_of": 192,
+      "gains": 40,
+      "regressions": 13,
+      "net": 27,
+      "case_level_p": 0.0002685401188191605,
+      "families": {
+        "edit": {
+          "base": 24,
+          "adapter": 24
+        },
+        "glob": {
+          "base": 24,
+          "adapter": 24
+        },
+        "grep": {
+          "base": 0,
+          "adapter": 24
+        },
+        "injection": {
+          "base": 24,
+          "adapter": 24
+        },
+        "read": {
+          "base": 24,
+          "adapter": 24
+        },
+        "slice": {
+          "base": 24,
+          "adapter": 24
+        },
+        "test": {
+          "base": 8,
+          "adapter": 24
+        },
+        "write": {
+          "base": 21,
+          "adapter": 8
+        }
+      },
+      "families_improved": 2,
+      "families_worse": 1,
+      "family_level_p": 1.0,
+      "math_base": 62,
+      "math_adapter": 64,
+      "math_of": 64
+    },
+    "format": {
+      "tool_base": 152,
+      "tool_adapter": 192,
+      "tool_of": 192,
+      "gains": 40,
+      "regressions": 0,
+      "net": 40,
+      "case_level_p": 1.8189894035458565e-12,
+      "families": {
+        "edit": {
+          "base": 24,
+          "adapter": 24
+        },
+        "glob": {
+          "base": 24,
+          "adapter": 24
+        },
+        "grep": {
+          "base": 0,
+          "adapter": 24
+        },
+        "injection": {
+          "base": 24,
+          "adapter": 24
+        },
+        "read": {
+          "base": 24,
+          "adapter": 24
+        },
+        "slice": {
+          "base": 24,
+          "adapter": 24
+        },
+        "test": {
+          "base": 8,
+          "adapter": 24
+        },
+        "write": {
+          "base": 24,
+          "adapter": 24
+        }
+      },
+      "families_improved": 2,
+      "families_worse": 0,
+      "family_level_p": 0.5,
+      "math_base": 62,
+      "math_adapter": 64,
+      "math_of": 64
+    },
+    "fair": {
+      "tool_base": 168,
+      "tool_adapter": 192,
+      "tool_of": 192,
+      "gains": 24,
+      "regressions": 0,
+      "net": 24,
+      "case_level_p": 1.1920928955078125e-07,
+      "families": {
+        "edit": {
+          "base": 24,
+          "adapter": 24
+        },
+        "glob": {
+          "base": 24,
+          "adapter": 24
+        },
+        "grep": {
+          "base": 0,
+          "adapter": 24
+        },
+        "injection": {
+          "base": 24,
+          "adapter": 24
+        },
+        "read": {
+          "base": 24,
+          "adapter": 24
+        },
+        "slice": {
+          "base": 24,
+          "adapter": 24
+        },
+        "test": {
+          "base": 24,
+          "adapter": 24
+        },
+        "write": {
+          "base": 24,
+          "adapter": 24
+        }
+      },
+      "families_improved": 1,
+      "families_worse": 0,
+      "family_level_p": 1.0,
+      "math_base": 62,
+      "math_adapter": 64,
+      "math_of": 64
+    }
+  },
+  "v5 held-out: base vs coding-4b-r2": {
+    "strict": {
+      "tool_base": 149,
+      "tool_adapter": 192,
+      "tool_of": 192,
+      "gains": 43,
+      "regressions": 0,
+      "net": 43,
+      "case_level_p": 2.2737367544323206e-13,
+      "families": {
+        "edit": {
+          "base": 24,
+          "adapter": 24
+        },
+        "glob": {
+          "base": 24,
+          "adapter": 24
+        },
+        "grep": {
+          "base": 0,
+          "adapter": 24
+        },
+        "injection": {
+          "base": 24,
+          "adapter": 24
+        },
+        "read": {
+          "base": 24,
+          "adapter": 24
+        },
+        "slice": {
+          "base": 24,
+          "adapter": 24
+        },
+        "test": {
+          "base": 8,
+          "adapter": 24
+        },
+        "write": {
+          "base": 21,
+          "adapter": 24
+        }
+      },
+      "families_improved": 3,
+      "families_worse": 0,
+      "family_level_p": 0.25,
+      "math_base": 62,
+      "math_adapter": 46,
+      "math_of": 64
+    },
+    "format": {
+      "tool_base": 152,
+      "tool_adapter": 192,
+      "tool_of": 192,
+      "gains": 40,
+      "regressions": 0,
+      "net": 40,
+      "case_level_p": 1.8189894035458565e-12,
+      "families": {
+        "edit": {
+          "base": 24,
+          "adapter": 24
+        },
+        "glob": {
+          "base": 24,
+          "adapter": 24
+        },
+        "grep": {
+          "base": 0,
+          "adapter": 24
+        },
+        "injection": {
+          "base": 24,
+          "adapter": 24
+        },
+        "read": {
+          "base": 24,
+          "adapter": 24
+        },
+        "slice": {
+          "base": 24,
+          "adapter": 24
+        },
+        "test": {
+          "base": 8,
+          "adapter": 24
+        },
+        "write": {
+          "base": 24,
+          "adapter": 24
+        }
+      },
+      "families_improved": 2,
+      "families_worse": 0,
+      "family_level_p": 0.5,
+      "math_base": 62,
+      "math_adapter": 46,
+      "math_of": 64
+    },
+    "fair": {
+      "tool_base": 168,
+      "tool_adapter": 192,
+      "tool_of": 192,
+      "gains": 24,
+      "regressions": 0,
+      "net": 24,
+      "case_level_p": 1.1920928955078125e-07,
+      "families": {
+        "edit": {
+          "base": 24,
+          "adapter": 24
+        },
+        "glob": {
+          "base": 24,
+          "adapter": 24
+        },
+        "grep": {
+          "base": 0,
+          "adapter": 24
+        },
+        "injection": {
+          "base": 24,
+          "adapter": 24
+        },
+        "read": {
+          "base": 24,
+          "adapter": 24
+        },
+        "slice": {
+          "base": 24,
+          "adapter": 24
+        },
+        "test": {
+          "base": 24,
+          "adapter": 24
+        },
+        "write": {
+          "base": 24,
+          "adapter": 24
+        }
+      },
+      "families_improved": 1,
+      "families_worse": 0,
+      "family_level_p": 1.0,
+      "math_base": 62,
+      "math_adapter": 46,
+      "math_of": 64
+    }
+  }
+}
