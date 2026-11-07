@@ -46,11 +46,14 @@ The machine was destroyed afterwards, and we confirmed it was gone.
 | Arithmetic (of 64) | 62 → 64 | 63 → 62 |
 | Upstream's own gate | improvement confirmed | **not confirmed** (`math_anchor_regressed`) |
 
-- **The tool-use result reproduces exactly** on different hardware.
-- **The answers' wording varied between GPUs.** 25 base and 28 adapter answers out of 256 differed in
-  text, mostly arithmetic working. That was enough to move one arithmetic answer, and that single answer
-  flipped the gate's verdict.
-- **The lesson:** a pass/fail rule that hinges on one answer is fragile. Treat a single run as a measurement,
+- **The tool-use totals reproduce exactly** on different hardware: strict +27 and fair +24.
+- **The answers' wording varied between GPUs.** 53 of the 512 answers (25 base, 28 adapter) differed in
+  text, mostly arithmetic working. Seven flipped between right and wrong:
+  - Four base write answers, two in each direction, which cancel out in the totals.
+  - Three arithmetic answers: base `math-59` went wrong → right, and adapter `math-20` and `math-59` went right → wrong.
+- **The gate's verdict flipped.** It rejects any arithmetic drop, so a one-question dip (63 → 62, exact paired
+  p = 1.0) turned "confirmed" into "not confirmed".
+- **The lesson:** a pass/fail rule with no margin for noise is fragile. Treat a single run as a measurement,
   not a verdict.
 
 Raw answers, logs and the cost receipt are in [`results/vast-v4-rtx3090/`](results/vast-v4-rtx3090/), and the
