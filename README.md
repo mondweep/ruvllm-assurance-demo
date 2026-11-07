@@ -33,6 +33,31 @@ Full tables: [`results/published/fair-rescore.md`](results/published/fair-rescor
 **Takeaway for leadership:** the result is real but narrow. Low p-values prove a difference
 isn't luck; they don't prove it matters. Keeping every raw answer is what made this check possible.
 
+## Independent re-test (7 Nov 2026)
+
+We re-ran the v4 held-out test ourselves, using upstream's own worker and scorer at commit `890a5d7`,
+on a rented RTX 3090 (upstream used an RTX 4090). Run time was 64 minutes and the cost was $0.24.
+The machine was destroyed afterwards, and we confirmed it was gone.
+
+| | Upstream published | Our re-test |
+|---|---|---|
+| Tool tasks, strict | 149 → 176 (+27, 13 regressions) | 149 → 176 (+27, 13 regressions) |
+| Tool tasks, fair | 168 → 192 (+24, 0 regressions) | 168 → 192 (+24, 0 regressions) |
+| Arithmetic (of 64) | 62 → 64 | 63 → 62 |
+| Upstream's own gate | improvement confirmed | **not confirmed** (`math_anchor_regressed`) |
+
+- **The tool-use result reproduces exactly** on different hardware.
+- **The answers' wording varied between GPUs.** 25 base and 28 adapter answers out of 256 differed in
+  text, mostly arithmetic working. That was enough to move one arithmetic answer, and that single answer
+  flipped the gate's verdict.
+- **The lesson:** a pass/fail rule that hinges on one answer is fragile. Treat a single run as a measurement,
+  not a verdict.
+
+Raw answers, logs and the cost receipt are in [`results/vast-v4-rtx3090/`](results/vast-v4-rtx3090/), and the
+three-way marking is in [`results/vast-v4-rtx3090/fair/fair-rescore.md`](results/vast-v4-rtx3090/fair/fair-rescore.md).
+The runner, which needs no SSH and has hard limits of $0.90 and 3 hours plus a self-destruct, is in
+[`tools/vast/`](tools/vast/).
+
 ## The three markers
 
 | Marker | Accepts |

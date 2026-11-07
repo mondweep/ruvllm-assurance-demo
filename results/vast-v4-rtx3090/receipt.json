@@ -1,0 +1,14 @@
+{
+  "provider": "vast.ai",
+  "instance": 59539714,
+  "offer": 29555910,
+  "gpu": "RTX 3090",
+  "usd_per_hour": 0.2138,
+  "minutes": 63.5,
+  "estimated_cost_usd": 0.2265,
+  "account_credit_change_usd": 0.2354,
+  "destroyed_and_verified": true,
+  "upstream_commit": "890a5d72c9550bb53df7e57b2b4503fa20dd080f",
+  "bundle": "frozen/v4",
+  "adapter": "weights/coding-4b"
+}
